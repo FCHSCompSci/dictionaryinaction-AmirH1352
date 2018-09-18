@@ -1,4 +1,6 @@
-list_of_locations = {
+import random
+
+locations = {
     'louiville':ky,
     'california':sanfran,
     'new york': timesquare
@@ -16,15 +18,23 @@ version = {
     v3: 'hotel'
     }
 
-
-print =( "welcome to make a new home")
+print ( "welcome to make a new home")
 while True:
-    print = input("please type your name or press x to exit")
-    if input == "x":
+    user_name = input("please type your name or press x to exit")
+    if user_name == "x":
         break
     else:
-        print (" Hi %s you will be given a random location"%(name))
-    
-    
-    
+        print (" Hi %s you will be given a random location"%(user_name))
 
+print ("%s is your homes location"%(random.choice(locations.keys())
+def build_house(color,style):
+        color = input ("here are a list of colors, pick one %s"%(colors))
+            if color == 'black':
+                return "c2"
+            elif color == 'blue':
+                return "c1"
+            elif color == 'white':
+                return "c3"
+            elif color == 'red':
+                return "c4"
+                                    
