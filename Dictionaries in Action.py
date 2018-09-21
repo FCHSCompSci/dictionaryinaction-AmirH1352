@@ -1,13 +1,5 @@
-import random
-import time
-
 final_home = {
 
-    }
-locations = {
-    'louiville':'ky',
-    'california':'sanfran',
-    'new york': 'timesquare'
     }
 
 def house_color(color):
@@ -27,7 +19,7 @@ def house_color(color):
             return "white paint"
         elif color == 'c4':
             return "red paint"
-final_home.update({'final_color':"color"})
+    final_home['final_color'] = "color"
             
 def house_style(style):
     version = {
@@ -43,21 +35,43 @@ def house_style(style):
             return "apartment home"
         elif style == 'v3':
             return "hotel home"
-final_home.update({'final_style':"style"})
+    final_home['final_style'] = "style"
+
+def house_location(place):
+    locations = {
+    'louiville':'ky',
+    'california':'sanfran',
+    'new york': 'timesquare'
+    }
+    for key, value in location.item():
+        place = input ("Finally pick a spot for your house we are limited for areas so pick carefully %s"%(key, value))
+        if place == 'ky':
+            return "louisville"
+        elif place == 'sanfran':
+            return "california"
+        elif place == 'timesquare':
+            return "new york"
+        final_home['final_location'] = "place"
 
             
 
 print( "welcome to make a new home")
+print("lets begin making your new home")
+
 while True:
     user_name = input("please type your name or press x to exit")
     if user_name == "x":
             break
     else:
-            print (" Hi %s you will be given a random location"%(user_name))
-    time.sleep(3)
-    print("%s is the location for your house" %(random.choice(locations.keys))
-          
-print("Here is you new home it is"(final_home['final_style']) "also it has"(final_home['final_color']))
+        print("alright %s lets build a house"%(user_name))
+    def house_location(place):
+        def house_color(color):
+            def house_style(style):
+            
+
+print("Here is your new home it is final_home['final_style']:",final_home['final_style'])
+    print("it is colored with final_home['final_color']:",final_home['final_color'])
+    print("it is located at final_home[final_location]:",final_home['final_location'])
 
 
 
