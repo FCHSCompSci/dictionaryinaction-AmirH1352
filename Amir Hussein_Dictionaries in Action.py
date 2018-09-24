@@ -1,6 +1,6 @@
-final_home = {
-
-    }
+final_color = (" ")
+final_style = (" ")
+final_place = (" ")
 
 def house_color(color):
     colors = {
@@ -19,7 +19,7 @@ def house_color(color):
             return "white paint"
         elif color == 'c4':
             return "red paint"
-    final_home['final_color'] = "color"
+        final_color.append("color")
             
 def house_style(style):
     version = {
@@ -35,7 +35,7 @@ def house_style(style):
             return "apartment home"
         elif style == 'v3':
             return "hotel home"
-    final_home['final_style'] = "style"
+        final_style.append("style")
 
 def house_location(place):
     locations = {
@@ -51,7 +51,7 @@ def house_location(place):
             return "california"
         elif place == 'timesquare':
             return "new york"
-        final_home['final_location'] = "place"
+        final_place.append("place")
 
             
 
@@ -68,12 +68,11 @@ while True:
         def house_color(color):
             def house_style(style):
             
+                print ("Here is your new home it is final_style[0]: ", final_style[0])
 
-print("Here is your new home it is final_home['final_style']:",final_home['final_style'])
-    print("it is colored with final_home['final_color']:",final_home['final_color'])
-    print("it is located at final_home[final_location]:",final_home['final_location'])
+        print ("it is colored with final_color[0]: ", final_color[0])
 
-
+        print ("it is located at final_location[0]: ", final_location[0])
 
 
 
